@@ -2,7 +2,7 @@ class minecraft{
   file {'/opt/minecraft':
     ensure => directory,
   }
-  file {'/opt/minecraft/minecraft_server.ja':
+  file {'/opt/minecraft/minecraft_server.jar':
     ensure => file,
     source => 'https://piston-data.mojang.com/v1/objects/84194a2f286ef7c14ed7ce0090dba59902951553/server.jar',
   }
