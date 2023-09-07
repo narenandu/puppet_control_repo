@@ -1,3 +1,5 @@
 class role::minecraft_server {
-  include minecraft
+  class{'minecraft':
+    install_dir => '/srv/minecraft'
+  }
 }
